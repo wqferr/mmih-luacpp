@@ -1,3 +1,6 @@
+# THIS IS A FORK!
+## [Check out the amazing original work here!](https://github.com/jordanvrtanoski/luacpp)
+
 # LuaCpp
 [![<ORG_NAME>](https://circleci.com/gh/jordanvrtanoski/luacpp/tree/main.svg?style=shield)](https://circleci.com/gh/jordanvrtanoski/luacpp)
 [![Coverage Status](https://coveralls.io/repos/github/jordanvrtanoski/luacpp/badge.svg?branch=main)](https://coveralls.io/github/jordanvrtanoski/luacpp?branch=main)
