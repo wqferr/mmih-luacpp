@@ -29,6 +29,8 @@
 #include "../Lua.hpp"
 #include "LuaState.hpp"
 
+#include <string>
+
 namespace LuaCpp {
 	namespace Engine {
 		/**
