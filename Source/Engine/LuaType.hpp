@@ -30,6 +30,7 @@
 #include "LuaState.hpp"
 
 #include <string>
+#include <optional>
 
 namespace LuaCpp {
 	namespace Engine {
@@ -44,17 +45,13 @@ namespace LuaCpp {
 		class LuaType {
 		   private:
 			/**
-			 * @brief true if the type is part of the lua engine global context
-			 */
-			bool global;
-			/**
 			 * @brief global name for the type under which it will be moved to the lua engine global context
 			 *
 			 * @details
 			 * If the `global` is true, the type will be moved from `C/C++` context to the lua global context
 			 * under the specifed name. The name is set by the `PushGlobal` or `PopGlobal` methods.
 			 */
-			std::string globalName;
+			std::optional<std::string> globalName;
 
 		   public:
 			/**
@@ -74,7 +71,7 @@ namespace LuaCpp {
 			virtual ~LuaType() = 0;
 
 			/**
-			 * @brief Returns the type id as deifend in the `lua.h`
+			 * @brief Returns the type id as defined in the `lua.h`
 			 *
 			 * @details
 			 * Returns the lua type id for the instance. The lua type id should be

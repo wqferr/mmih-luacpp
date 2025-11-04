@@ -80,7 +80,7 @@ namespace LuaCpp {
 			 * @brief true if the table is array (only integer keys)
 			 *
 			 * @details
-			 * If all of the keys are integers, than the table is an array.
+			 * If all of the keys are integers, then the table is an array.
 			 */
 			bool _isArray;
 			/**
@@ -172,7 +172,7 @@ namespace LuaCpp {
 			 * @return
 			 * the encapsulated table
 			 */
-			std::map<Table::Key, std::shared_ptr<LuaType>> getValues() const;
+			const std::map<Table::Key, std::shared_ptr<LuaType>>& getValues() const;
 
 			/**
 			 * @breif Returns the value stored at the key
@@ -202,4 +202,3 @@ namespace LuaCpp {
 }
 
 #endif // LUACPP_LUATTABLE_HPP
-

@@ -199,7 +199,7 @@ std::string LuaTTable::ToString() const {
 	return sso.str();
 }
 
-std::map<Table::Key, std::shared_ptr<LuaType>> LuaTTable::getValues() const {
+const std::map<Table::Key, std::shared_ptr<LuaType>>& LuaTTable::getValues() const {
 	return table;
 }
 
@@ -213,4 +213,3 @@ void LuaTTable::setValue(Table::Key key, std::shared_ptr<LuaType> value) {
 	}
 	table[key] = std::move(value);
 }
-
